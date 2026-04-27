@@ -37,7 +37,7 @@ body {
 .bio-page {
   width: 100%;
   max-width: 480px;
-  padding: 0 0 80px;
+  padding: 0 0 80 0px;
   position: relative;
 }
 
@@ -80,11 +80,10 @@ body {
   margin-top: 8px;
 }
 
-/* Foto circular / oval com flat-bottom */
 .hero-photo-circle {
   width: 100%;
   height: 480px;
-  border-radius: 0 0 50% 50% / 0 0 120px 120px;  /* de 80px para 120px */
+  border-radius: 0 0 50% 50% / 0 0 120px 120px;
   overflow: hidden;
 }
 
@@ -111,7 +110,6 @@ body {
   height: 100px;
 }
 
-/* Setinha de scroll */
 .hero-scroll-hint {
   position: absolute;
   bottom: 16px;
@@ -125,7 +123,7 @@ body {
 
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(6px); }
+  50% { transform: translateX(-50%) translateY(6px); }
 }
 
 /* ── ORNAMENT DIVIDER ── */
@@ -135,6 +133,7 @@ body {
   gap: 12px;
   padding: 0 32px;
   margin: 36px 0;
+  
 }
 
 .divider-line {
@@ -303,8 +302,8 @@ body {
 /* ── BOTTOM PHOTO ── */
 .bottom-photo-wrap {
   position: relative;
-  margin: 0 24px;
-  border-radius: 20px;
+  margin: 0 0px;
+  border-radius: 50% 50% 0 0 / 120px 120px 0 0;  /* arco em cima, reto embaixo */
   overflow: hidden;
   animation: fadeUp 0.9s ease 0.3s both;
 }
@@ -312,7 +311,7 @@ body {
 .bottom-photo-wrap img,
 .bottom-photo-placeholder {
   width: 100%;
-  height: 380px;
+  height: 480px;
   object-fit: cover;
   object-position: top center;
   display: block;

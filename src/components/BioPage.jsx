@@ -23,12 +23,7 @@ function HeroSection({ name, title }) {
   </div>
 
   <div className="hero-photo-circle">
-    <div className="hero-photo-placeholder">
-      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="35" r="22" fill="white" />
-        <ellipse cx="50" cy="85" rx="35" ry="25" fill="white" />
-      </svg>
-    </div>
+    <img src="/images/about.jpg" alt={name} />
   </div>
 
   {/* Seta FORA do círculo, absolute no hero */}
@@ -108,7 +103,7 @@ function CtaSection({ cta }) {
     <section className="cta-section" data-testid="cta-section">
       <h2 className="section-title" style={{ fontStyle: 'normal', fontSize: '1.7rem' }}>
         Será um <em>prazer</em>
-        <br />trabalharmos juntas
+        <br />te ensinar!
       </h2>
       <p>{cta.text}</p>
     </section>
@@ -120,12 +115,7 @@ function BottomSection({ name, contact }) {
   return (
     <>
       <div className="bottom-photo-wrap" data-testid="bottom-photo">
-        <div className="bottom-photo-placeholder">
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: 90, height: 90, opacity: 0.25 }}>
-            <circle cx="50" cy="35" r="22" fill="white" />
-            <ellipse cx="50" cy="85" rx="35" ry="25" fill="white" />
-          </svg>
-        </div>
+      <img src="/images/support.jpg" alt={name} />
         <div className="bottom-photo-overlay">
           <span style={{ color: '#faf8f4', fontFamily: 'Cormorant Garamond, serif', fontSize: '1.1rem', fontStyle: 'italic', fontWeight: 300, letterSpacing: '0.04em' }}>
             {name}
@@ -172,27 +162,14 @@ export default function BioPage() {
 
         <Divider />
 
-        <LinksSection links={profile.links} />
-
-        <Divider />
-
         <CtaSection cta={profile.cta} />
 
         <Divider />
 
         <BottomSection name={profile.name} contact={profile.contact} />
 
-        <Divider />
-
-        <ContactRow contact={profile.contact} />
-
-        <Divider />
-
-        <footer className="bio-footer" data-testid="bio-footer">
-          <p>© {new Date().getFullYear()} {profile.name}</p>
-        </footer>
       </main>
-
+      
       <a
         href={profile.contact.whatsapp}
         className="whatsapp-float"
