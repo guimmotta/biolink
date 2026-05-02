@@ -177,7 +177,7 @@ export default function BioPage() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        💬 Fale Comigo
+        Quero destravar meu inglês! 💬
       </a>
     </>
   )
