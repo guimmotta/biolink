@@ -38,7 +38,7 @@ body {
 .bio-page {
   width: 100%;
   max-width: 480px;
-  padding: 0 0 80 0px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -59,8 +59,6 @@ body {
   text-align: center;
   z-index: 2;
   color: var(--text-dark); /* ou branco se a foto for escura */
-  -webkit-text-stroke: 1px var(--cream); /* espessura + cor */
-  paint-order: stroke; /* garante que o stroke fique atrás do preenchimento */
 }
 
 .hero-header h1 {
@@ -184,6 +182,10 @@ body {
   letter-spacing: 0.01em;
 }
 
+.about-section p + p {
+  margin-top: 16px;
+}
+
 /* ── SERVICES ── */
 .services-section {
   padding: 0 24px;
@@ -300,6 +302,10 @@ body {
   line-height: 1.8;
   color: var(--text-mid);
   margin-bottom: 28px;
+}
+
+.cta-section p + p {
+  margin-top: 16px;
 }
 
 /* ── BOTTOM PHOTO ── */

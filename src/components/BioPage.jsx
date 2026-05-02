@@ -23,7 +23,7 @@ function HeroSection({ name, title }) {
   </div>
 
   <div className="hero-photo-circle">
-    <img src="/images/about.jpg" alt={name} />
+    <img src="/images/about.png" alt={name} />
   </div>
 
   {/* Seta FORA do círculo, absolute no hero */}
@@ -43,7 +43,9 @@ function AboutSection({ about }) {
       <h2 className="section-title">
         Sobre <span>mim</span>
       </h2>
-      <p data-testid="about-text">{about}</p>
+      {about.map((paragrafo, i) => (
+        <p key={i} data-testid="about-text">{paragrafo}</p>
+      ))}
     </section>
   )
 }
@@ -102,8 +104,7 @@ function CtaSection({ cta }) {
   return (
     <section className="cta-section" data-testid="cta-section">
       <h2 className="section-title" style={{ fontStyle: 'normal', fontSize: '1.7rem' }}>
-        Será um <em>prazer</em>
-        <br />te ensinar!
+        Vamos Juntas?
       </h2>
       <p>{cta.text}</p>
     </section>

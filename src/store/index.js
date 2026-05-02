@@ -5,10 +5,14 @@ const profileSlice = createSlice({
   initialState: {
     name: 'Paloma Gonçalves',
     title: 'English Teacher',
-    about: 'Sou apaixonada por ensinar inglês de forma leve, prática e contextualizada. Há mais de 10 anos, ajudo mulheres adultas a destravarem a fala, ganharem confiança e se comunicarem com naturalidade no trabalho e na vida.',
+    about: [
+    'Sou apaixonada por ensinar inglês de forma leve, prática e contextualizada. Há mais de 10 anos, ajudo mulheres adultas a destravarem a fala, ganharem confiança e se comunicarem com naturalidade no trabalho e na vida.',
+    'Se você já entende inglês, mas trava na hora de falar, eu posso te guiar nesse processo 💬✨'
+    ],
     cta: {
       title: 'Será um prazer ensinar você!',
-      text: 'Sou apaixonada por ensinar inglês de forma leve e eficaz. Com mais de 10 anos de experiência, ajudo meus alunos a alcançarem fluência e confiança para se expressarem em qualquer situação. Vamos juntos nessa jornada de aprendizado?',
+      text:
+        'Vai ser um prazer te ajudar a finalmente se sentir confiante falando inglês ✨',
     },
     contact: {
       whatsapp: 'https://wa.me/+553598346733',
@@ -19,21 +23,21 @@ const profileSlice = createSlice({
       {
         id: 1,
         name: 'Aulas Individuais',
-        description: 'Para quem quer um plano 100% personalizado e focado nas suas dificuldades. Destrave a fala e ganhe confiança com aulas pensadas para a sua rotina e objetivos. 💬✨',
+        description: 'Para quem quer um plano 100% personalizado e focado nas suas dificuldades.',
         link: '#',
         bg: '#122C4F',
       },
       {
         id: 2,
         name: 'Aulas em Grupo',
-        description: 'Aprenda inglês de forma leve e dinâmica, praticando com outras pessoas que estão no mesmo momento que você. Ideal para ganhar fluência com mais naturalidade, consistência e perder a vergonha de falar inglês.',
+        description: 'Ideal para ganhar fluência com mais naturalidade, consistência e perder a vergonha de falar inglês.',
         link: '#',
         bg: '#1d457a',
       },
       {
         id: 3,
         name: 'Bússola',
-        description: 'Um guia claro para você parar de se sentir perdida no inglês. Siga um plano estruturado e saiba exatamente o que estudar para evoluir com confiança.',
+        description: 'Um guia claro para você parar de se sentir perdida no inglês.',
         link: '#',
         bg: '#5B88B2',
       },
