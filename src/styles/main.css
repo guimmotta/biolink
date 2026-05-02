@@ -2,6 +2,7 @@
 
 :root {
   --cream: #f5f0e8;
+  --noir: #2c2118;
   --warm-white: #faf8f4;
   --taupe: #c8b89a;
   --taupe-dark: #9e8a72;
@@ -58,6 +59,8 @@ body {
   text-align: center;
   z-index: 2;
   color: var(--text-dark); /* ou branco se a foto for escura */
+  -webkit-text-stroke: 1px var(--cream); /* espessura + cor */
+  paint-order: stroke; /* garante que o stroke fique atrás do preenchimento */
 }
 
 .hero-header h1 {
