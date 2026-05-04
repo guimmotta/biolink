@@ -419,6 +419,36 @@ body {
   color: var(--text-light);
 }
 
+/* ── SAVE THE DATE PAGE ── */
+.save-the-date-page {
+  padding: 60px 36px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-the-date-title {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.save-the-date-text {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.85;
+  max-width: 400px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
