@@ -37,7 +37,7 @@ const profileSlice = createSlice({
         id: 3,
         name: 'Bússola',
         description: 'Um guia claro para você parar de se sentir perdida no inglês.',
-        link: '/save-the-date',
+        link: 'https://bussola2026.vercel.app/',
         bg: '#5B88B2',
       },
     ],
