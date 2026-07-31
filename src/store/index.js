@@ -15,30 +15,23 @@ const profileSlice = createSlice({
         'Vai ser um prazer te ajudar a finalmente se sentir confiante falando inglês ✨',
     },
     contact: {
-      whatsapp: 'https://wa.me/+5535998346733',
+      whatsapp: 'https://forms.gle/Usx9YXGMcYAg25m77', //no longer whatsapp, too lazy to change the whole thing, client has different internal procedures
       instagram: 'https://instagram.com/teacherpalomafonseca',
     },
     services: [
       {
         id: 1,
-        name: 'Aulas Individuais',
-        description: 'Para quem quer um plano 100% personalizado e focado nas suas dificuldades.',
-        link: 'https://api.whatsapp.com/send?phone=5535998346733&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20Individuais!!',
-        bg: '#122C4F',
-      },
-      {
-        id: 2,
-        name: 'Aulas em Grupo',
-        description: 'Ideal para ganhar fluência com mais naturalidade, consistência e perder a vergonha de falar inglês.',
-        link: 'https://api.whatsapp.com/send?phone=5535998346733&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20em%20Grupo!!',
-        bg: '#1d457a',
-      },
-      {
-        id: 3,
         name: 'Bússola',
         description: 'Um guia claro para você parar de se sentir perdida no inglês.',
         link: 'https://bussola2026.vercel.app/',
         bg: '#5B88B2',
+      },
+      {
+        id: 2,
+        name: 'Lista de Espera',
+        description: 'Gostaria de ter aulas comigo? Entre já na lista de espera!!',
+        link: 'https://forms.gle/Usx9YXGMcYAg25m77',
+        bg: '#122C4F',
       },
     ],
     links: [
